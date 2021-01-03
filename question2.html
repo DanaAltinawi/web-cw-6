@@ -14,17 +14,30 @@
         dir="rtl"
         type="text"
         placeholder="أدخل العدد"
-        id="height"
+        id="number"
         style="text-align: center; font-size: 1rem; margin: 0.4rem"
       />
     </div>
     <div class="center">
-      <button onclick="">اختبر 🤓</button>
+      <button onclick="oddOreven()">اختبر 🤓</button>
     </div>
+    <!-- <h2>  </h2> -->
     <script>
       // قم بإنشاء الدالة هنا
       // numberType << idقم بإظهار النتيجة النهائية باستخدام ال
       // لا تنسى مناداة الدالة عند الضغط على الزر
+      
+    
+      function oddOreven(){
+      let num = document.getElementById(`number`).value;
+
+    
+ if ( num % 2 == 0) {
+     document.getElementById('numberType').innerText = `هذا العدد زوجي`
+ }else{
+     document.getElementById('numberType').innerText = `هذا العدد فردي`
+ }
+}        
     </script>
   </body>
 </html>
